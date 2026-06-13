@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Profile | LangLearn</title>
+
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <h1>User Profile</h1>
+    <a href="dashboard.html">← Dashboard</a>
+  </header>
+
+  <main class="profile-container">
+
+    <section class="profile-card">
+      <div class="avatar" id="avatar">A</div>
+
+      <h2 id="fullName">Student Name</h2>
+      <p id="email">student@example.com</p>
+
+      <div class="profile-stats">
+        <div>
+          <h3 id="selectedLanguage">English</h3>
+          <span>Language</span>
+        </div>
+
+        <div>
+          <h3 id="totalScore">0</h3>
+          <span>Total Score</span>
+        </div>
+
+        <div>
+          <h3 id="streak">0</h3>
+          <span>Streak</span>
+        </div>
+      </div>
+
+      <button id="logoutBtn">Logout</button>
+    </section>
+
+  </main>
+
+  <script src="js/profile.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <script src="js/theme.js"></script>
+</body>
+</html>

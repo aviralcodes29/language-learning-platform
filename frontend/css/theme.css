@@ -1,0 +1,51 @@
+.theme-toggle {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+body.light-mode {
+  background: #f8fafc;
+  color: #020617;
+}
+
+body.light-mode .header,
+body.light-mode .sidebar,
+body.light-mode footer {
+  background: #ffffff;
+}
+
+body.light-mode .topbar,
+body.light-mode .stat-card,
+body.light-mode .language-card,
+body.light-mode .module-card,
+body.light-mode .lesson-info,
+body.light-mode .add-section,
+body.light-mode .search-section,
+body.light-mode .lesson-card,
+body.light-mode .quiz-card,
+body.light-mode .score-card,
+body.light-mode .profile-card,
+body.light-mode .level-card,
+body.light-mode .leaderboard-card,
+body.light-mode .badge-card,
+body.light-mode .summary-card,
+body.light-mode .feature-card {
+  background: #ffffff;
+  color: #020617;
+}
+
+body.light-mode p,
+body.light-mode a,
+body.light-mode span {
+  color: #334155;
+}

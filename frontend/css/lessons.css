@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.lesson-info,
+.add-section,
+.search-section {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.lesson-info span {
+  color: #38bdf8;
+}
+
+#vocabForm {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+#vocabForm input,
+#searchInput {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+#vocabForm button {
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 12px;
+  color: #38bdf8;
+}
+
+.lesson-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.lesson-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.lesson-card h2 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.lesson-card p {
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.lesson-card span {
+  color: white;
+  font-weight: bold;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 18px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  #vocabForm {
+    grid-template-columns: 1fr;
+  }
+}

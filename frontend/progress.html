@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Progress | LangLearn</title>
+
+  <link rel="stylesheet" href="css/progress.css" />
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <h1>Learning Progress</h1>
+    <a href="dashboard.html">← Dashboard</a>
+  </header>
+
+  <main class="progress-container">
+
+    <section class="profile-card">
+      <h2>Hello, <span id="userName">Student</span> 👋</h2>
+      <p>Your learning performance overview</p>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <h3>Total Score</h3>
+        <p id="totalScore">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Daily Streak</h3>
+        <p><span id="streak">0</span> Days</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Selected Language</h3>
+        <p id="selectedLanguage">English</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Vocabulary Words</h3>
+        <p id="totalWords">0</p>
+      </div>
+    </section>
+
+    <section class="level-card">
+      <h2>Learning Level</h2>
+      <p id="levelText">Beginner</p>
+
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+      <p id="progressPercent">0%</p>
+    </section>
+
+  </main>
+
+  <script src="js/progress.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <script src="js/theme.js"></script>
+</body>
+</html>

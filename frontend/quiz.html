@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quiz | LangLearn</title>
+
+  <link rel="stylesheet" href="css/quiz.css" />
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <h1>Vocabulary Quiz</h1>
+    <a href="dashboard.html">← Dashboard</a>
+  </header>
+
+  <main class="quiz-container">
+    <div class="quiz-card">
+      <h2 id="question">Question loading...</h2>
+
+      <div id="options" class="options"></div>
+
+      <p id="result"></p>
+
+      <button id="nextBtn">Next Question</button>
+    </div>
+
+    <div class="score-card">
+      <h2>Score</h2>
+      <p id="score">0</p>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <script src="js/theme.js"></script>
+</body>
+</html>

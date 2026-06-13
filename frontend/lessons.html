@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocabulary Lessons | LangLearn</title>
+  <link rel="stylesheet" href="css/lessons.css" />
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <header>
+    <h1>Vocabulary Manager</h1>
+    <a href="dashboard.html">← Dashboard</a>
+  </header>
+
+  <section class="lesson-info">
+    <h2>Selected Language: <span id="languageName"></span></h2>
+  </section>
+
+  <section class="add-section">
+    <h2>Add New Word</h2>
+
+    <form id="vocabForm">
+      <input type="text" id="word" placeholder="Word" required />
+      <input type="text" id="meaning" placeholder="Meaning" required />
+      <input type="text" id="example" placeholder="Example Sentence" required />
+      <button type="submit">Add Word</button>
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search vocabulary..." />
+  </section>
+
+  <section id="lessonContainer" class="lesson-container"></section>
+
+  <script src="js/lessons.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <script src="js/theme.js"></script>
+</body>
+</html>

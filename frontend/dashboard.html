@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | LangLearn</title>
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div>
+        <h2>LangLearn</h2>
+
+        <nav>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="lessons.html">Lessons</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="progress.html">Progress</a>
+          <a href="profile.html">Profile</a>
+          <a href="leaderboard.html">Leaderboard</a>
+          <a href="achievements.html">Achievements</a>
+        </nav>
+      </div>
+
+      <button id="logoutBtn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>Welcome, <span id="userName">Student</span> 👋</h1>
+          <p>Continue your language learning journey today.</p>
+        </div>
+      </header>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <h3>Total Score</h3>
+          <p id="totalScore">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Daily Streak</h3>
+          <p><span id="streak">0</span> Days</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Selected Language</h3>
+          <p id="selectedLanguage">English</p>
+        </div>
+      </section>
+
+      <section class="language-section">
+        <h2>Choose Language</h2>
+
+        <div class="language-grid">
+          <div class="language-card" data-language="English">English</div>
+          <div class="language-card" data-language="Hindi">Hindi</div>
+          <div class="language-card" data-language="Spanish">Spanish</div>
+          <div class="language-card" data-language="French">French</div>
+        </div>
+      </section>
+
+      <section class="module-section">
+        <h2>Learning Modules</h2>
+
+        <div class="module-grid">
+
+          <a href="profile.html" class="module-card">
+            <h3>Profile</h3>
+            <p>View your profile.</p>
+          </a>
+
+          <a href="lessons.html" class="module-card">
+            <h3>Vocabulary</h3>
+            <p>Learn new words daily.</p>
+          </a>
+
+          <a href="#" class="module-card">
+            <h3>Grammar</h3>
+            <p>Improve sentence structure.</p>
+          </a>
+
+          <a href="quiz.html" class="module-card">
+            <h3>Quiz</h3>
+            <p>Test your knowledge.</p>
+          </a>
+
+          <a href="progress.html" class="module-card">
+            <h3>Progress</h3>
+            <p>Track your performance.</p>
+          </a>
+
+          <a href="leaderboard.html" class="module-card">
+            <h3>Leaderboard</h3>
+            <p>Compete with other learners.</p>
+          </a>
+
+          <a href="achievements.html" class="module-card">
+            <h3>Achievements</h3>
+            <p>Unlock badges as you learn.</p>
+          </a>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+  <script src="js/theme.js"></script>
+</body>
+</html>
