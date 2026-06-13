@@ -1,48 +1,43 @@
-# LangLearn - Full Stack Language Learning Platform
+# 🚀 LangLearn - Full Stack Language Learning Platform
 
-LangLearn is a modern full-stack language learning web application built using HTML, CSS, JavaScript, Python FastAPI, and SQLite. The platform helps users learn new languages through vocabulary management, quizzes, progress tracking, achievements, and leaderboard competition.
+LangLearn is a modern full-stack language learning web application built using HTML, CSS, JavaScript, FastAPI, and SQLite. It helps users learn languages through vocabulary management, quizzes, achievements, progress tracking, and leaderboard competition.
 
 ---
 
-## Features
+## ✨ Features
 
-### Authentication
+### 🔐 Authentication
 
 * User Registration
 * User Login
-* Password Hashing
+* Password Hashing using Passlib & Bcrypt
 * Session Management
 * Logout Functionality
 
-### Dashboard
+### 🌍 Language Learning
 
-* Personalized User Dashboard
 * Language Selection
-* Learning Statistics
-* Responsive User Interface
-
-### Vocabulary Management
-
+* Vocabulary Management
 * Add Vocabulary Words
 * Search Vocabulary
 * Delete Vocabulary
-* Language-Based Vocabulary Storage
+* Language-Specific Learning
 
-### Quiz System
+### 🧠 Quiz System
 
-* Vocabulary-Based Quiz Generation
+* Vocabulary-Based Quiz
+* Multiple Choice Questions
 * Score Calculation
-* XP Points System
-* User Performance Tracking
+* XP System
 
-### Progress Tracking
+### 📈 Progress Tracking
 
-* Total Score Monitoring
+* Total Score Tracking
 * Learning Level Detection
-* Vocabulary Count Tracking
-* Progress Bar Visualization
+* Progress Bar
+* Vocabulary Statistics
 
-### Achievements & Badges
+### 🏆 Achievements & Badges
 
 * Beginner Badge
 * Active Learner Badge
@@ -50,29 +45,30 @@ LangLearn is a modern full-stack language learning web application built using H
 * Language Champion Badge
 * Pro Learner Badge
 
-### Leaderboard
+### 🥇 Leaderboard
 
 * Global Ranking System
-* Score-Based Sorting
-* User Competition
+* Score-Based Ranking
+* Competitive Learning Experience
 
-### Profile Management
+### 👤 User Profile
 
-* User Profile Page
-* Language Information
-* Score Tracking
+* User Information
 * Avatar Generation
+* Score Tracking
+* Streak Tracking
+* Logout
 
-### UI Features
+### 🎨 UI Features
 
 * Responsive Design
 * Dark Mode
 * Light Mode
-* Mobile Friendly Layout
+* Mobile Friendly Interface
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -98,47 +94,46 @@ LangLearn is a modern full-stack language learning web application built using H
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
-LangLearn
+LangLearn/
 │
-├── frontend
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── dashboard.html
-│   ├── lessons.html
-│   ├── quiz.html
-│   ├── progress.html
-│   ├── leaderboard.html
-│   ├── profile.html
-│   ├── achievements.html
-│   │
-│   ├── css
-│   │   ├── style.css
-│   │   ├── auth.css
-│   │   ├── dashboard.css
-│   │   ├── lessons.css
-│   │   ├── quiz.css
-│   │   ├── progress.css
-│   │   ├── leaderboard.css
-│   │   ├── profile.css
-│   │   ├── achievements.css
-│   │   └── theme.css
-│   │
-│   └── js
-│       ├── auth.js
-│       ├── dashboard.js
-│       ├── lessons.js
-│       ├── quiz.js
-│       ├── progress.js
-│       ├── leaderboard.js
-│       ├── profile.js
-│       ├── achievements.js
-│       └── theme.js
+├── index.html
+├── login.html
+├── register.html
+├── dashboard.html
+├── lessons.html
+├── quiz.html
+├── progress.html
+├── leaderboard.html
+├── profile.html
+├── achievements.html
 │
-├── backend
+├── css/
+│   ├── style.css
+│   ├── auth.css
+│   ├── dashboard.css
+│   ├── lessons.css
+│   ├── quiz.css
+│   ├── progress.css
+│   ├── leaderboard.css
+│   ├── profile.css
+│   ├── achievements.css
+│   └── theme.css
+│
+├── js/
+│   ├── auth.js
+│   ├── dashboard.js
+│   ├── lessons.js
+│   ├── quiz.js
+│   ├── progress.js
+│   ├── leaderboard.js
+│   ├── profile.js
+│   ├── achievements.js
+│   └── theme.js
+│
+├── backend/
 │   ├── main.py
 │   ├── database.py
 │   ├── models.py
@@ -146,7 +141,7 @@ LangLearn
 │   ├── auth.py
 │   ├── requirements.txt
 │   │
-│   └── routes
+│   └── routes/
 │       ├── user_routes.py
 │       ├── language_routes.py
 │       ├── lesson_routes.py
@@ -154,41 +149,47 @@ LangLearn
 │       ├── quiz_routes.py
 │       └── leaderboard_routes.py
 │
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Installation
+## ⚙️ Backend Setup
 
-### Clone Repository
-
-```bash
-git clone https://github.com/your-username/LangLearn.git
-cd LangLearn
-```
-
-### Backend Setup
+### Create Virtual Environment
 
 ```bash
 cd backend
 
 python -m venv venv
+```
 
+### Activate Virtual Environment
+
+```bash
 venv\Scripts\activate
+```
 
+### Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+### Run Backend Server
+
+```bash
 python -m uvicorn main:app --reload
 ```
 
-Backend Server:
+Backend URL:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Swagger API Documentation:
+Swagger Documentation:
 
 ```text
 http://127.0.0.1:8000/docs
@@ -196,9 +197,9 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## Frontend Setup
+## 💻 Frontend Setup
 
-Open the frontend folder using VS Code.
+Open the project using VS Code.
 
 Run:
 
@@ -209,12 +210,12 @@ Live Server
 Open:
 
 ```text
-frontend/index.html
+index.html
 ```
 
 ---
 
-## Current Modules
+## 📌 Current Modules
 
 * Authentication System
 * Dashboard
@@ -222,38 +223,57 @@ frontend/index.html
 * Vocabulary CRUD
 * Quiz System
 * Progress Tracking
-* Leaderboard
-* Profile Management
 * Achievements & Badges
+* Leaderboard
+* User Profile
 * Dark / Light Theme
 
 ---
 
-## Future Enhancements
+## 🚀 Future Enhancements
 
 * Daily Streak System
 * Grammar Lessons
+* Better Quiz Engine
 * AI Chat Tutor
 * Voice Pronunciation
 * Certificate Generator
 * Admin Dashboard
-* Advanced Analytics
-* Gamification Features
 
 ---
 
-## Project Status
+## 🌐 Deployment
 
-Current Completion: **90%+**
+### Frontend
 
-This project demonstrates full-stack development skills including frontend development, backend API development, database management, authentication, state management, and responsive UI design.
+GitHub Pages
+
+### Backend
+
+Render
+
+### Database
+
+SQLite (Current)
+
+PostgreSQL (Future Upgrade)
 
 ---
 
-## Author
+## 📊 Project Status
+
+**Current Completion: ~90%**
+
+LangLearn demonstrates full-stack development skills including frontend development, backend API development, database management, authentication, responsive UI design, REST APIs, and user engagement systems.
+
+---
+
+## 👨‍💻 Author
 
 **Aviral Singh**
 
 B.Tech CSE (AI & ML)
 
 Frontend Developer | Full Stack Learner | Python Enthusiast
+
+GitHub: https://github.com/Aviralcodes29
